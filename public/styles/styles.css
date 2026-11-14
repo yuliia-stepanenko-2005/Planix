@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.addNote-form{
+    border: 0;
+    background-color: #6d2b77;
+    color: white;
+}
+h1{
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4, h5, h6, p, div{
+    color: white;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #000000;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.addNote{
+    border-radius: 10px;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.addNote input[name = "title"]{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 5px;
+}
+.addNote textarea{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    margin-top: 5px;
+}
+.addNote input[type='submit']{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    width: 250px;
+    height: 40px;
+}
+
+footer{
+    text-align: center;
+    width: 100vw;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+footer ul li a:hover{
+    color: #6d2b77;
+    text-decoration: underline #ffffff 3px solid;
+}
+footer p{
+    margin-top: 10px;
+}
+.note{
+}
+.note h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.note h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.note div{
+    font-size: 1.2rem;
+    border: white solid 1px;
+}
+.all-notes-h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.all-notes ul li{
+    list-style: none;
+}
+.all-notes ul li h3{
+    font-size: 1.5rem;
+}
+.all-notes ul li p{
+    font-size: 1.2rem;
+}
+input[value="Delete"]{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    color: black;
+    width: 250px;
+    height: 40px;
+    background-color: white;
+    font-size: 1.2rem;
+}

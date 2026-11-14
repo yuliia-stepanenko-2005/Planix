@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<h1 class="all-notes-h1">Hi, here is your all notes</h1>
+<div class="all-notes">
+    <ul>
+<% for(let i=0; i<notes.length; i++) { %>
+    <li>
+        <h3><%= notes[i].titleOfNote %></h3>
+        <p><%= notes[i].textOfNote %></p>
+    </li>
+<% } %>
+    </ul>
+    <form method="POST" action="delete">
+        <input type="submit" name="delete" value="Delete">
+        <% notes.pop();%>
+    </form>
+</div>
+<%- include("partials/footer.ejs") %>
